@@ -5,7 +5,7 @@
 A clean commit log is an important component of a good code repository.  It aids
 team collaboration by enabling each team member to quickly understand changes
 that were made.  It also facilitates troubleshooting by making it easier to
-find when and where bugs were introduced.  There are an innumerable number of
+find when and where bugs were introduced.  There are innumerable number of
 variations on git workflows in practice.  For Data Engineering at InsideTrack,
 we use a version of a rebase/squash feature branch workflow (see
 [here](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow),
@@ -76,7 +76,7 @@ git rebase -i origin/master
 ````
 
 The command `git rebase -i origin/master` initializes an **interactive rebase**.
-This brings up a window in our default editor (set by environment variable
+This brings up a window in your default editor (set by environment variable
 `EDITOR`.  e.g., `export EDITOR='emacs -nw'`).  The window that pops up will look
 something like
 
@@ -112,7 +112,7 @@ squash 274b3d2 Oops, forgot that thing
 ````
 
 After you **save and exit**, the commit will be squashed, but now you'll need
-to give the squashed commit a new commit message.  So, github will bring up
+to give the squashed commit a new commit message.  So, git will bring up
 your editor again with something like
 
 ````
@@ -160,12 +160,12 @@ git add my_changes.rb
 **Commit** those changes
 
 ````
-git commit -m “Crap that our senior dev whined about"
+git commit -m "Crap that our senior dev whined about"
 ````
 
 ![add crap](images/4-add_crap_after_code_review.png)
 
-Push changes to feature branch for further code review
+**Push** those changes to feature branch for further code review
 
 ````
 git push origin Ticket1234-MyAwesomeFeature
