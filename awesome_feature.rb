@@ -1,3 +1,3 @@
 def so_radical
-  "RADical"
+  "RADical AND tubular"
 end
